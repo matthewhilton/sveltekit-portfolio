@@ -39,7 +39,7 @@
 
 <div id="outer">
     <div id="page">
-        <a href="/" id="back"> <img src="/static/arrow-left-solid.svg" /> Back </a>
+        <a href="/" id="back"> <img src="/arrow-left-solid.svg" /> Back </a>
         {#if $item.data}
             <Lazy height={700}>
                 <img id="cover" alt="cover" src={$item.data.workitem.cover.url} />

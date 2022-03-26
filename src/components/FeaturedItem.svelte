@@ -2,8 +2,6 @@
 	import Lazy from 'svelte-lazy';
 
 	export let data = {};
-
-	console.log(data);
 </script>
 
 <div id="container">

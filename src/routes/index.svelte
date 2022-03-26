@@ -75,9 +75,9 @@ import SocialButton from "../components/SocialButton.svelte";
     <h1> Matthew Hilton </h1>
 
     <div class="social">
-        <SocialButton icon="static/linkedin-brands.svg" link="https://www.linkedin.com/in/matthew-hilton1234/"/>
-        <SocialButton icon="static/envelope-solid.svg" link="mailto:mj.hilton@outlook.com"/>
-        <SocialButton icon="static/github-brands.svg" link="https://github.com/matthewhilton"/>
+        <SocialButton icon="linkedin-brands.svg" link="https://www.linkedin.com/in/matthew-hilton1234/"/>
+        <SocialButton icon="envelope-solid.svg" link="mailto:mj.hilton@outlook.com"/>
+        <SocialButton icon="github-brands.svg" link="https://github.com/matthewhilton"/>
     </div>
 
     <div class="emphasis">
@@ -86,13 +86,13 @@ import SocialButton from "../components/SocialButton.svelte";
 
         <div id="catalyst">
             <h3> Catalyst IT </h3>
-            <img src="static/catalyst.gif" alt="code icon" id="codeicon" />
+            <img src="catalyst.gif" alt="code icon" id="codeicon" />
         </div>
     </div>
 
     <div class="section">
         <div class="header">
-            <img src="static/code.gif" alt="code icon" id="codeicon" />
+            <img src="code.gif" alt="code icon" id="codeicon" />
             <h2> Dev Projects </h2>
         </div>
 
@@ -101,7 +101,7 @@ import SocialButton from "../components/SocialButton.svelte";
 
     <div class="section">
         <div class="header">
-            <img src="static/art.gif" alt="code icon" id="codeicon" />
+            <img src="art.gif" alt="code icon" id="codeicon" />
             <h2> Art Projects </h2>
         </div>
 
