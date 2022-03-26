@@ -86,7 +86,7 @@ import SocialButton from "../components/SocialButton.svelte";
 
         <div id="catalyst">
             <h3> Catalyst IT </h3>
-            <img src="catalyst.gif" alt="code icon" id="codeicon" />
+            <img src="catalyst.gif" alt="work icon" id="codeicon" />
         </div>
     </div>
 
@@ -101,7 +101,7 @@ import SocialButton from "../components/SocialButton.svelte";
 
     <div class="section">
         <div class="header">
-            <img src="art.gif" alt="code icon" id="codeicon" />
+            <img src="art.gif" alt="art icon" id="codeicon" />
             <h2> Art Projects </h2>
         </div>
 
