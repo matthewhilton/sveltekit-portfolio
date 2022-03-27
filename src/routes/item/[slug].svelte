@@ -35,8 +35,6 @@
 
 	const item = operationStore(workitemquery, { slug: $page.params.slug });
 	query(item);
-
-    console.log($item)
 </script>
 
 <div id="outer">
@@ -61,7 +59,19 @@
                     {/each}
                 </div>
             </div>
+
+            {#if $item.data.workitem.githubUrl != null}
+                <a href={$item.data.workitem.githubUrl}><b> Github Repository </b></a>
+            {/if}
             <p>{$item.data.workitem.description}</p>
+
+            <div id="imagegallery">
+                {#each $item.data.workitem.images as image}
+                    <Lazy height={700}>
+                        <img src={image.url} />
+                    </Lazy>
+                {/each}
+            </div>
         {:else if $item.fetching}
             <p>Loading...</p>
         {:else}
@@ -71,6 +81,23 @@
 </div>
 
 <style>
+
+    #imagegallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #imagegallery img {
+        width: auto;
+        max-height: 500px;
+    }
+
+    a {
+        margin-top: 10px;
+        color: white;
+    }
     h1 {
         margin: 0;
     }
@@ -124,11 +151,18 @@
 
     p {
         font-size: 120%;
+        text-align: justify;
     }
 
     @media only screen and (max-width: 900px) {
         #page {
             width: auto;
+        }
+
+        #imagegallery img {
+            width: auto;
+            max-width: 80%;
+            max-height: none;
         }
     }
 </style>
